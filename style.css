@@ -1,0 +1,106 @@
+*{
+    background-color: lightgray; /* Background color, color */
+}
+body{
+    text-align: center;
+    font-size: 2ex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Source Code Pro';
+}
+.ul {
+    /* padding: 10px;
+    padding-bottom: 60px; */
+}
+
+#list {
+    text-align: left; /*Text*/
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  #footer {
+    position:  absolute;
+    width: 100%;
+  }
+
+  img {
+    height:10cm;
+    width: 6cm;
+    border-radius: 0.5cm;
+    padding: 10px 10px 0 10px;
+  }
+
+#day-title {
+      font-size:2ch; /*Unit*/
+  }
+
+/* .wrapper {
+        margin-top: 50px;
+        text-align: center ;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        padding-bottom: 30px;
+    }
+
+.wrapper > .box{
+        position: relative;
+        
+    }
+
+.wrapper .box p{
+    font-size: smaller;
+}
+    
+#fav-players{
+    -webkit-filter: blur(5px);
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    margin: 0;
+    max-height: 200px;
+    width: auto;
+    border: 5px solid;
+    border-radius: 10px;
+    border-color: black;
+    position: relative;
+    }
+
+#fav-players:hover{
+    -webkit-filter: blur(0);
+} */
+
+.title{
+    padding-top: 10px;
+}
+
+input[type="text"]{
+    width: 200px;
+    margin-bottom: 10px;
+
+}
+
+button{
+    font-family: monospace;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
