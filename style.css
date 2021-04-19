@@ -12,67 +12,72 @@ h1 {
     font-family: 'Source Code Pro';
     text-decoration: underline wavy beige;
 }
-.ul {
-    /* padding: 10px;
-    padding-bottom: 60px; */
-    
-}
 
+/* List of texts in my journal aligns left*/
 #list {
-    text-align: left; /*Text*/
+    text-align: left; 
 }
 
+/* Create 3 columns floating left for my journal */
 .column {
     float: left;
     width: 33.33%;
-  }
+}
   
+
 .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 
-  @media screen and (max-width: 450pt) {
+@media screen and (max-width: 450pt) {
     .column {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
-  #footer {
+/* Absolute position for footer */
+#footer {
     position:  absolute;
     width: 100%;
-  }
+}
 
-  img {
+/* Sizing the images*/
+img {
     height:10cm;
     width: 6cm;
     border-radius: 2em;
     padding: 10px 10px 0 10px;
-  }
+}
 
+/* Days title */
 #day-title {
-      font-size:2ch; /*Unit*/
-  }
+    font-size:2ch; /*Unit*/
+}
 
+/* Wrapper grid for Favorite Role Models */
 .wrapper {
-        margin-top: 50px;
-        text-align: center;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        padding-bottom: 30px;
-    }
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding-bottom: 30px;
+    justify-items: center;
+}
 
+/* Relative position for each box */
 .wrapper > .box{
-        position: relative;
-        
-    }
+    position: relative;
+    
+}
 
 .wrapper .box p{
     font-size: smaller;
 }
-    
+
+/* Designing the images inside the boxes */
 #fav-players{
     -webkit-filter: blur(5px);
     display: inline-block;
@@ -86,28 +91,37 @@ h1 {
     border-color: hsl(0, 100%, 0%);
     border-style: dashed;
     position: relative;
-    }
+}
 
 #fav-players:hover{
-    -webkit-filter: blur(0);
+    -webkit-filter: blur(0);    
 }
 
 .title{
     padding-top: 10px;
 }
 
+/* Sizing text box */
 input[type="text"]{
     width: 200px;
     margin-bottom: 10px;
 
 }
 
+/* Button submit */
 button{
     font-family: monospace;
 }
 
-a:active{
-    background-color: rgb(218, 254, 255);
+/* Linked text */
+a{
+    border: 2px solid black;
+    color:hsl(0, 100%, 0%);
+    text-decoration: none;
+    display: inline-block;
+    background-color: palevioletred ;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 button:hover{
@@ -115,14 +129,18 @@ button:hover{
     color: white;
 }
 
+/* Creating flex container for top list programming language */
 .flex-container {
-display: flex;
-background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    order: 7;
 }
 
 .flex-container > div {
-background-color: gray;
-margin: 60px;
-padding: 20px;
-font-size: 30px;
+    background-color: gray;
+    margin: 50px;
+    padding: 20px;
+    font-size: 20px;
 }
