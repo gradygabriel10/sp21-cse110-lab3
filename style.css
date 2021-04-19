@@ -1,18 +1,21 @@
 *{
-    background-color: lightgray; /* Background color, color */
+    background-color: 	rgb(211,211,211); /* Background color */
 }
+
 body{
     text-align: center;
-    font-size: 2ex;
+    font-size: 2ex; /* Relative unit */
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
     font-family: 'Source Code Pro';
+    text-decoration: underline wavy beige;
 }
 .ul {
     /* padding: 10px;
     padding-bottom: 60px; */
+    
 }
 
 #list {
@@ -30,7 +33,7 @@ h1 {
     clear: both;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 450pt) {
     .column {
       width: 100%;
     }
@@ -44,7 +47,7 @@ h1 {
   img {
     height:10cm;
     width: 6cm;
-    border-radius: 0.5cm;
+    border-radius: 2em;
     padding: 10px 10px 0 10px;
   }
 
@@ -54,11 +57,10 @@ h1 {
 
 .wrapper {
         margin-top: 50px;
-        text-align: center ;
+        text-align: center;
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        /* background-color: cadetblue; */
         padding-bottom: 30px;
     }
 
@@ -79,9 +81,10 @@ h1 {
     /* Sizing */
     max-height: 200px;
     width: auto;
-    border: 5px solid;
-    border-radius: 10px;
-    border-color: black;
+    border: 0.5em solid;
+    border-radius: 0.625rem;
+    border-color: hsl(0, 100%, 0%);
+    border-style: dashed;
     position: relative;
     }
 
@@ -103,7 +106,23 @@ button{
     font-family: monospace;
 }
 
+a:active{
+    background-color: rgb(218, 254, 255);
+}
+
 button:hover{
-    background-color: black;
+    background-color: #000000;
     color: white;
+}
+
+.flex-container {
+display: flex;
+background-color: beige;
+}
+
+.flex-container > div {
+background-color: gray;
+margin: 60px;
+padding: 20px;
+font-size: 30px;
 }
